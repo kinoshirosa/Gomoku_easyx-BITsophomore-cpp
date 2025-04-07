@@ -1,0 +1,57 @@
+﻿  board.cpp
+E:\C and C++\Gomoku_easyx\board.cpp(212,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\board.cpp(219,43): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\board.cpp(225,43): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  board.h
+  button.cpp
+E:\C and C++\Gomoku_easyx\button.cpp(23,18): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\button.cpp(26,19): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\button.cpp(26,12): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\button.cpp(42,18): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\button.cpp(45,19): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\button.cpp(45,12): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\button.cpp(61,18): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\button.cpp(64,19): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\button.cpp(64,12): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  button.h
+  kifu.cpp
+  main.cpp
+  messagebox.cpp
+E:\C and C++\Gomoku_easyx\messagebox.cpp(22,50): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\messagebox.cpp(52,23): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\messagebox.cpp(57,84): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\messagebox.cpp(57,37): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\messagebox.cpp(57,24): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\messagebox.cpp(57,17): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\messagebox.cpp(59,19): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\messagebox.cpp(59,12): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  piece.cpp
+  textbox.cpp
+E:\C and C++\Gomoku_easyx\textbox.cpp(39,50): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(55,31): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(72,50): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(72,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(78,34): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(147,23): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(151,20): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(151,13): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(153,20): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(153,13): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(172,23): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(178,20): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(178,13): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(180,20): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(180,13): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(201,23): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(205,19): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox.cpp(205,12): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  textbox_csdn.h
+E:\C and C++\Gomoku_easyx\textbox_csdn.h(48,32): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox_csdn.h(89,36): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\C and C++\Gomoku_easyx\textbox_csdn.h(109,40): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
+E:\C and C++\Gomoku_easyx\piece.cpp(37,1): warning C4715: “operator<<”: 不是所有的控件路径都返回值
+E:\C and C++\Gomoku_easyx\messagebox.cpp(60,1): warning C4715: “SMessageBox::print_text”: 不是所有的控件路径都返回值
+Gomoku_easyx\x64\Debug\board.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+Gomoku_easyx\x64\Debug\button.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+  Gomoku_easyx.vcxproj -> E:\C and C++\Gomoku_easyx\x64\Debug\Gomoku_easyx.exe
