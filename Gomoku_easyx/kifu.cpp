@@ -36,5 +36,6 @@ void Kifu::print_kifu() {
 	ListNode<Piece>* current_node = _phead;
 	while (List<Piece>::GetNext(*current_node)->next != nullptr) {
 		std::cout << current_node->data << std::endl;
+		current_node = List<Piece>::GetNext(*current_node);
 	}
 }

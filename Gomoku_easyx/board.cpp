@@ -72,13 +72,6 @@ bool Board::if_win(const piece_color color, const int a, const int b) {
 			(_pboard[i][j].get_color() == _pboard[i + 3][j].get_color()) && 
 			(_pboard[i][j].get_color() == _pboard[i + 4][j].get_color()) &&
 			_pboard[i][j].get_color() != NONE) {
-			for (int i0 = 1; i0 <= 5; i0++) {
-				if (_pboard[i][j].get_color() == BLACK_PIECE)
-					setfillcolor(YELLOW);
-				else if (_pboard[i][j].get_color() == WHITE_PIECE)
-					setfillcolor(RED);
-				fillcircle((i + i0) * interval, (j + 1) * interval, instruct_size);
-			}
 			return 1;
 		}
 	}
@@ -91,13 +84,6 @@ bool Board::if_win(const piece_color color, const int a, const int b) {
 			(_pboard[i][j].get_color() == _pboard[i][j + 3].get_color()) &&
 			(_pboard[i][j].get_color() == _pboard[i][j + 4].get_color()) &&
 			_pboard[i][j].get_color() != NONE) {
-			for (int i0 = 1; i0 <= 5; i0++) {
-				if (_pboard[i][j].get_color() == BLACK_PIECE)
-					setfillcolor(YELLOW);
-				else if (_pboard[i][j].get_color() == WHITE_PIECE)
-					setfillcolor(RED);
-				fillcircle((i + 1) * interval, (j + i0) * interval, instruct_size);
-			}
 			return 1;
 		}
 	}
@@ -109,15 +95,7 @@ bool Board::if_win(const piece_color color, const int a, const int b) {
 			(_pboard[i][j].get_color() == _pboard[i + 2][j + 2].get_color()) &&
 			(_pboard[i][j].get_color() == _pboard[i + 3][j + 3].get_color()) &&
 			(_pboard[i][j].get_color() == _pboard[i + 4][j + 4].get_color()) &&
-
 			_pboard[i][j].get_color() != NONE) {
-			for (int i0 = 1; i0 <= 5; i0++) {
-				if (_pboard[i][j].get_color() == BLACK_PIECE)
-					setfillcolor(YELLOW);
-				else if (_pboard[i][j].get_color() == WHITE_PIECE)
-					setfillcolor(RED);
-				fillcircle((i + i0) * interval, (j + i0) * interval, instruct_size);
-			}
 			return 1;
 		}
 	}
@@ -130,13 +108,6 @@ bool Board::if_win(const piece_color color, const int a, const int b) {
 			(_pboard[i][j].get_color() == _pboard[i + 3][j - 3].get_color()) &&
 			(_pboard[i][j].get_color() == _pboard[i + 4][j - 4].get_color()) &&
 			_pboard[i][j].get_color() != NONE) {
-			for (int i0 = 0; i0 < 5; i0++) {
-				if (_pboard[i][j].get_color() == BLACK_PIECE)
-					setfillcolor(YELLOW);
-				else if (_pboard[i][j].get_color() == WHITE_PIECE)
-					setfillcolor(RED);
-				fillcircle((i + 1 + i0) * interval, (j + 1 - i0) * interval, instruct_size);
-			}
 			return 1;
 		}
 	}
@@ -190,63 +161,4 @@ void Board::print_board_console() {
 		}
 		std::cout << "\n";
 	}
-}
-void Board::print_board_easyx(const int& interval, const int& instruct_size,  const COLORREF& line_color) {
-	int length = interval * _size;
-	for (int i = interval; i <= length; i += interval) {
-		setlinecolor(line_color);
-		line(interval, i, length, i);
-		line(i, interval, i, length);
-	}
-	line(length + 1, interval, length + 1, length);
-	line(interval - 1, interval, interval - 1, length);
-	line(interval, interval - 1, length, interval - 1);
-	line(interval, length + 1, length, length + 1);
-	setfillcolor(line_color);
-	for (int i = interval; i <= length; i += interval) {
-		for (int j = interval; j <= length; j += interval) {
-			solidcircle(i, j, instruct_size);
-		}
-	}
-	
-	int scale = 0.5;
-	settextcolor(BLACK);
-	settextstyle(13, 0, _T("Î¢ÈíÑÅºÚ"));
-	std::wstring number_str;
-	std::wstring char_str;
-	char char0 = 'A';
-	int i, j, number;
-	for (i = length + interval, j = interval * 0.7, number = 1; j <= length; j += interval, number++) {
-		number_str = std::to_wstring(number);
-		settextstyle(17, 0, _T("Î¢ÈíÑÅºÚ"));
-		setbkmode(TRANSPARENT);
-		outtextxy(i, j, number_str.c_str());
-	}
-	for (j = length + interval, i = interval * 0.7, number = 0; i <= length; i += interval, number++) {
-		number_str = std::to_wstring(char0 + number);
-		settextstyle(17, 0, _T("Î¢ÈíÑÅºÚ"));
-		setbkmode(TRANSPARENT);
-		outtextxy(i, j, char0 + number);
-	}
-}
-void Board::print_piece_easyx(const int& interval, const int& instruct_size,
-	const int& piece_size, const int& input_x, const int& input_y, const piece_color& current_color) {
-	int center_x = interval * input_x;
-	int center_y = interval * input_y;
-	if (current_color == BLACK_PIECE) {
-		setfillcolor(BLACK);
-		fillcircle(center_x, center_y, piece_size);
-		setfillcolor(BLACK);
-		solidcircle(center_x, center_y, piece_size - 2);
-	}
-	else if (current_color == WHITE_PIECE) {
-		setfillcolor(BLACK);
-		fillcircle(center_x, center_y, piece_size);
-		setfillcolor(WHITE);
-		solidcircle(center_x, center_y, piece_size - 2);
-	}
-}
-void Board::print_piece_easyx(const int& interval, const int& instruct_size,
-	const int& piece_size, const Piece& piece) {
-	print_piece_easyx(interval, instruct_size, piece_size, piece.get_x() + 1, piece.get_y() + 1, piece.get_color());
 }
