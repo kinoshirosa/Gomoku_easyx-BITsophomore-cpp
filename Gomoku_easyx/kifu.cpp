@@ -1,10 +1,8 @@
 #include "kifu.h"
 
 Kifu::Kifu() {
-	_phead = nullptr;
 }
 Kifu::~Kifu() {
-	delete[] _phead;
 }
 Kifu::Kifu(const Kifu& kifu) {
 	CopyKifu(kifu);
@@ -22,10 +20,11 @@ void Kifu::operator= (const Kifu& kifu) {
 }
 
 void Kifu::set_piece(const Piece& piece) {
-	this->List<Piece>::Insert(piece, this->ablist<Piece>::GetLength() + 1);
+	this->List<Piece>::Insert(piece, this->ablist<Piece>::GetLength());
 }
 void Kifu::retract_piece() {
 	Remove_index(ablist<Piece>::length);
+	std::cout << "piece removed" << std::endl;
 }
 Piece Kifu::get_piece(int i) {
 	Piece result;
@@ -33,9 +32,9 @@ Piece Kifu::get_piece(int i) {
 	return result;
 }
 void Kifu::print_kifu() {
-	ListNode<Piece>* current_node = _phead;
-	while (List<Piece>::GetNext(*current_node)->next != nullptr) {
-		std::cout << current_node->data << std::endl;
+	ListNode<Piece>* current_node = this->head;
+	while (current_node != nullptr) {
+		std::cout << current_node->get_data();
 		current_node = List<Piece>::GetNext(*current_node);
 	}
 }

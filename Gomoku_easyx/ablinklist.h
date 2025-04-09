@@ -14,6 +14,7 @@ public:
 		data = item;
 		next = next1;
 	}
+	type get_data() { return data; }
 };
 
 template<class type>
@@ -38,6 +39,7 @@ class ablinklist
 protected:
 	ListNode<type>* head;
 public:
+	virtual ~ablinklist() {};
 	ListNode<type>* GetHead() { return head; }
 	ListNode<type>* GetNext(ListNode<type>& n) {
 		return n.next;

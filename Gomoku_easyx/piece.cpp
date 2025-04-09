@@ -28,10 +28,11 @@ std::ostream& operator<< (std::ostream& os, const Piece& piece) {
 		std::cout << "NONE PIECE" << std::endl;
 		return os;
 	}
-	if (piece.get_color() == BLACK_PIECE) {
-		std::cout << "BLACK x: " << piece.get_x() << "y: " << piece.get_y() << std::endl;
+	else if (piece.get_color() == BLACK_PIECE) {
+		std::cout << "BLACK x: " << piece.get_x() + 1 << "\ty: " << piece.get_y() + 1 << std::endl;
 	}
-	if (piece.get_color() == WHITE_PIECE) {
-		std::cout << "WHITE x: " << piece.get_x() << "y: " << piece.get_y() << std::endl;
+	else if (piece.get_color() == WHITE_PIECE) {
+		std::cout << "WHITE x: " << piece.get_x() + 1 << "\ty: " << piece.get_y() + 1 << std::endl;
 	}
+	return os;
 }

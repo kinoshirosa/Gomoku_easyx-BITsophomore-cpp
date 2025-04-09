@@ -30,6 +30,10 @@ public:
 	void load_kifu(Kifu&);
 	// visualization
 	void print_board_console();
+	void print_board_easyx(const int&,const int&,const COLORREF&, const COLORREF&);
+	void print_piece_easyx(const int& interval, const int& instruct_size, const int& piece_size, const int& x_input, const int& y_input, const piece_color& current_color);
+	void print_piece_easyx(const int& interval, const int& instruct_size, const int& piece_size, const Piece& piece);
+	void erase_piece_easyx(const int& interval, const int& instruct_size, const int& piece_size, const int& x_input, const int& y_input, const COLORREF bk_color, const COLORREF line_color);
 };
 /*
 Board::Board(int size = 0) :

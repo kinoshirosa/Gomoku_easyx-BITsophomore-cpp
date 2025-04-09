@@ -141,7 +141,6 @@
   <ItemGroup>
     <ClInclude Include="ablinklist.h" />
     <ClInclude Include="cpplist.h" />
-    <ClInclude Include="easyx_color.h" />
     <ClInclude Include="game.cpp" />
     <ClInclude Include="game.h" />
     <ClInclude Include="kifu.h" />

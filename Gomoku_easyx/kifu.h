@@ -5,8 +5,6 @@
 
 class Kifu :
 	public List<Piece> {
-private:
-	ListNode<Piece>* _phead;
 public:
 	Kifu();
 	~Kifu();

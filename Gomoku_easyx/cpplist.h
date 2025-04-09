@@ -23,7 +23,7 @@ public:
 
 template<class type>
 bool List<type>::Insert(type value, int i) {
-	ListNode<type>* p = ablinklist<type>::Find_index(i - 1);
+	ListNode<type>* p = ablinklist<type>::Find_index(i);
 	if (p == nullptr)
 		return false;
 	ListNode<type>* newnode = new ListNode<type>(value, p->next);
